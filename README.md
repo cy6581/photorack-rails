@@ -1,7 +1,9 @@
 # One Month Rails
 
-This is the pint sample app for One Month Rails. It's called pint because we all could do with a pint from time to time :).
+This is the photorack sample app for One Month Rails. 
+
+Runs on Bootstrap 3, so you may notice that the form styling is different. 
+
 
 by YCY
 
-[blah blah blah]
