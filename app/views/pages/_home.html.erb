@@ -1,0 +1,20 @@
+
+<!-- class = "jumbotron center" allows the jumbotron to be in the centre-->
+
+<div class = "jumbotron center">
+	<p>
+		<% if user_signed_in? %>
+			<h2>Welcome Back</h2> 
+			<%= link_to new_pin_path, class: "btn btn-primary btn-lg" do%>
+				<span class="glyphicon glyphicon-plus"></span>New Pin
+				</button>
+			<% end %>
+
+		<% else %>
+			<h1>Hello</h1>
+			<%= link_to "Sign Up", new_user_registration_path, class: "btn btn-success" %>
+			<%= link_to "Login", new_user_session_path, class: "btn btn-success"%>
+		<% end %>
+	</p>
+	
+</div>

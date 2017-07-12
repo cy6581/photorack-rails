@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Arima+Madurai');
+
+$body-bg: 							#c2e0bf; 
+$text-color:						navy;
+$font-family-base: 			'Arial', 'Arima Madurai'; // base is what overwrites the core font-family
+
+
+$brand-primary: 		darken(#428bca, 6.5%);
+$navbar-default-bg:	black; //background colour of the nav-bar
+$navbar-default-link-color: #ffff00; 
+$navbar-default-link-hover: #d2ef13; 
+
+$jumbotron-bg:			#FFE4B5; //the background colour of the rectangle 
+$jumbotron-color:			black; // the color of the text.
+$jumbotron-heading-color: 	black;
+$jumbotron-padding: 15px;
+
+
+$panel-default-heading-bg: 					white;
+$panel-footer-bg: 									#f0f8ff;
+
+
+@import 'bootstrap';
+
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
+
+.center {
+	text-align: center;
+	header-font-style: italic; 
+}
+
+
+

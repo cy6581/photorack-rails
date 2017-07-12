@@ -1,0 +1,25 @@
+<%= link_to 'Back', pins_path, class: "btn btn-default" %>
+
+
+<div class="row">
+	<div class="col-md-offset-2 col-md-8">
+		<div class="panel panel-default">
+			<div class="panel-heading center">
+				<%= image_tag @pin.image.url(:medium) %>
+			</div><!-- panel heading-->
+			<div class="panel-footer center">
+				<p><%= @pin.description %></p>
+				<p>By <strong><%= @pin.user.username if @pin.user %></strong></p>
+				<%= link_to @pin.image.url, class: "btn btn-default" do %>
+					High Res
+				<% end %>
+				<% if @pin.user == current_user %>
+					<%= link_to edit_pin_path(@pin), class: "btn btn-default" do %>
+						<span class="glyphicon glyphicon-edit"></span>Edit
+					<% end %>
+				<% end %>
+			</div>
+	</div><!-- panel default-->
+</div><!-- col offset-->
+ 
+
